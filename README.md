@@ -10,5 +10,5 @@ $ fc-list
 ```
 For configuration your fonts on Unix
 ```shell
-$ fc-cache
+$ fc-cache -vfs
 ```
