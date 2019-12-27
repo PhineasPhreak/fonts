@@ -3,6 +3,7 @@
   - Fonts from Google : [Google Fonts](https://fonts.google.com/)
   - Font Awesome : [Font Awesome](https://fontawesome.com/)
   - Nerd Fonts : [Nerd Fonts](https://www.nerdfonts.com/)
+  - Hack Fonts : [Hack Fonts](https://sourcefoundry.org/hack/)
 
 Listing fonts on your Unix system
 ```shell
