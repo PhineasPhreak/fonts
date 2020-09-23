@@ -13,10 +13,15 @@ SLEEP=$(command -v sleep)
 MV=$(command -v mv)
 
 nerd_folder="Nerd-Fonts"
-font_directory=$(HOME/.fonts/)
+font_directory="$HOME/.fonts/"
+
+nerd_site="https://www.nerdfonts.com/"
+nerd_github_release="https://github.com/ryanoasis/nerd-fonts/releases"
 version_nerd="v2.1.0"
 
-echo -e "\nDownload nerd-fonts from github RELEASE version $version_nerd\n"
+echo -e "\nSite Nerd Fonts : $nerd_site"
+echo -e "Github Nerd Fonts : $nerd_github_release\n"
+echo -e "\n[*] Download nerd-fonts from github RELEASE version $version_nerd\n"
 
 ############################
 ### Download with "curl" ###
@@ -45,28 +50,30 @@ curl -L -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_ne
 
 if [ -z "$UNZIP" ] || [ -z "$CURL" ] || [ -z "$RM" ] || [ -z "$SLEEP" ] || [ -z "$MV" ]; then
     echo -e "\nRequired tools are missing\n"
-    echo -e "Tools are : $UNZIP, $CURL, $RM and $SLEEP\n"
+    echo -e "Tools are : $UNZIP, $CURL, $RM, $SLEEP and $MV\n"
     exit 1
 
 else
     # Unzip Multiple Files from Linux Command Line Using Shell For Loop
     # for z in *.zip; do unzip $z; done
 
-    echo -e "\nExtract archives with unzip command\n"
+    echo -e "\n[*] Extract archives with unzip command\n"
     sleep 1
-    unzip '*.zip' -d $nerd_folder
+    unzip '*.zip' -d $nerd_folder || echo "Impossible to decompress zip files from the current folder"
 
-    echo -e "\nDeleted all zip files from this directory\n"
+    echo -e "\n[*] Deleted all zip files from this directory\n"
     sleep 1
-    rm -rf *.zip
+    rm -f *.zip || echo "Cannot delete zip files from the current folder"
 
-    echo -e "\nMove folder "$nerd_folder" into "$font_directory"\n"
-	if ( !is_dir( $font_directory ) ) {
-    	mkdir( $font_directory );
-        mv -v $nerd_folder $font_directory && echo "Error"
-	}
+    echo -e "[*] Move folder '$nerd_folder' into '$font_directory'\n"
+    if [ -d $font_directory ]; then
+        sleep 1
+        mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
 
-    sleep 1
-    mv -v $nerd_folder $font_directory && echo "Error"
+    else
+        sleep 1
+        mkdir $font_directory || echo "Cannot create directory, directory exist"
+        mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
+    fi
 fi
 
