@@ -30,6 +30,7 @@ echo -e "\n[*] Download nerd-fonts from github RELEASE version $version_nerd\n"
 curl -L -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/3270.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/Agave.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/AnonymousPro.zip \
+-O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/BigBlueTerminal.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/CodeNewRoman.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/DejaVuSansMono.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/DroidSansMono.zip \
@@ -40,6 +41,7 @@ curl -L -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_ne
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/Hack.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/JetBrainsMono.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/LiberationMono.zip \
+-O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/Meslo.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/ProFont.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/RobotoMono.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/SourceCodePro.zip \
