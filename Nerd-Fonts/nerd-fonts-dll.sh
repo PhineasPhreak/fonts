@@ -12,9 +12,6 @@ RM=$(command -v rm)
 SLEEP=$(command -v sleep)
 MV=$(command -v mv)
 
-nerd_folder="Nerd-Fonts"
-font_directory="$HOME/.fonts/"
-
 nerd_site="https://www.nerdfonts.com/"
 nerd_github_release="https://github.com/ryanoasis/nerd-fonts/releases"
 version_nerd="v2.1.0"
@@ -69,16 +66,5 @@ else
     echo -e "\n[*] Deleted all zip files from this directory\n"
     sleep 1
     rm -f *.zip || echo "Cannot delete zip files from the current folder"
-
-    #echo -e "[*] Move folder '$nerd_folder' into '$font_directory'\n"
-    #if [ -d $font_directory ]; then
-    #    sleep 1
-    #    mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
-
-    #else
-    #    sleep 1
-    #    mkdir $font_directory || echo "Cannot create directory, directory exist"
-    #    mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
-    #fi
 fi
 
