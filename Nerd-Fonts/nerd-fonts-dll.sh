@@ -58,24 +58,27 @@ if [ -z "$UNZIP" ] || [ -z "$CURL" ] || [ -z "$RM" ] || [ -z "$SLEEP" ] || [ -z 
 else
     # Unzip Multiple Files from Linux Command Line Using Shell For Loop
     # for z in *.zip; do unzip $z; done
+    # OR
+    # for f in `ls -1 *.zip`; do unzip $f -d `basename $f .zip`; done
 
     echo -e "\n[*] Extract archives with unzip command\n"
     sleep 1
-    unzip '*.zip' -d $nerd_folder || echo "Impossible to decompress zip files from the current folder"
+    for f in `ls -1 *.zip`; do unzip $f -d `basename $f .zip`; done
+    # unzip '*.zip' -d $nerd_folder || echo "Impossible to decompress zip files from the current folder"
 
     echo -e "\n[*] Deleted all zip files from this directory\n"
     sleep 1
     rm -f *.zip || echo "Cannot delete zip files from the current folder"
 
-    echo -e "[*] Move folder '$nerd_folder' into '$font_directory'\n"
-    if [ -d $font_directory ]; then
-        sleep 1
-        mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
+    #echo -e "[*] Move folder '$nerd_folder' into '$font_directory'\n"
+    #if [ -d $font_directory ]; then
+    #    sleep 1
+    #    mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
 
-    else
-        sleep 1
-        mkdir $font_directory || echo "Cannot create directory, directory exist"
-        mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
-    fi
+    #else
+    #    sleep 1
+    #    mkdir $font_directory || echo "Cannot create directory, directory exist"
+    #    mv -vf $nerd_folder $font_directory || echo "Impossible to move the folder to its destination"
+    #fi
 fi
 
