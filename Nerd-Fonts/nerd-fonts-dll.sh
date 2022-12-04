@@ -14,7 +14,7 @@ MV=$(command -v mv)
 
 nerd_site="https://www.nerdfonts.com/"
 nerd_github_release="https://github.com/ryanoasis/nerd-fonts/releases"
-version_nerd="v2.1.0"
+version_nerd="v2.2.2"
 
 echo -e "\nSite Nerd Fonts : $nerd_site"
 echo -e "Github Nerd Fonts : $nerd_github_release\n"
