@@ -14,7 +14,7 @@ MV=$(command -v mv)
 
 nerd_site="https://www.nerdfonts.com/"
 nerd_github_release="https://github.com/ryanoasis/nerd-fonts/releases"
-version_nerd="v2.3.1"
+version_nerd="v2.3.3"
 
 echo -e "\nSite Nerd Fonts : $nerd_site"
 echo -e "Github Nerd Fonts : $nerd_github_release\n"
@@ -28,6 +28,7 @@ curl -L -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_ne
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/Agave.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/AnonymousPro.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/BigBlueTerminal.zip \
+-O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/CascadiaCode.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/CodeNewRoman.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/DejaVuSansMono.zip \
 -O https://github.com/ryanoasis/nerd-fonts/releases/download/$version_nerd/DroidSansMono.zip \
