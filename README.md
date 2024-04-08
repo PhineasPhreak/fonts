@@ -6,6 +6,8 @@
   - Hack Fonts : [Hack Fonts](https://sourcefoundry.org/hack/)
   - cascadia-code Fonts : [CascadiaCode (Windows Fonts)](https://github.com/microsoft/cascadia-code)
 
+To test the various fonts : [Programmingfonts.org](https://www.programmingfonts.org/)
+
 ## Google Fonts
 ### Local installation package managers
 For Linux, macOS, FreeBSD, or HaikuOS you can also use [fnt](https://github.com/alexmyczko/fnt), to install single fonts. For [RPM](http://bootes.ethz.ch/fonts/rpm/), [DEB](http://bootes.ethz.ch/fonts/deb/) based systems, feel free to try the linked URLs for individual fonts. Others can also use the [webservice](http://bootes.ethz.ch/fonts/).
