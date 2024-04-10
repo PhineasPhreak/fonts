@@ -7,16 +7,16 @@ Fira Code is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  FiraCode-VariableFont_wght.ttf
+  Fira_Code/FiraCode-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Fira Code:
-  static/FiraCode-Light.ttf
-  static/FiraCode-Regular.ttf
-  static/FiraCode-Medium.ttf
-  static/FiraCode-SemiBold.ttf
-  static/FiraCode-Bold.ttf
+  Fira_Code/static/FiraCode-Light.ttf
+  Fira_Code/static/FiraCode-Regular.ttf
+  Fira_Code/static/FiraCode-Medium.ttf
+  Fira_Code/static/FiraCode-SemiBold.ttf
+  Fira_Code/static/FiraCode-Bold.ttf
 
 Get started
 -----------
@@ -60,8 +60,8 @@ License
 Please read the full license text (OFL.txt) to understand the permissions,
 restrictions and requirements for usage, redistribution, and modification.
 
-You can use them freely in your products & projects - print or digital,
-commercial or otherwise. However, you can't sell the fonts on their own.
+You can use them in your products & projects – print or digital,
+commercial or otherwise.
 
 This isn't legal advice, please consider consulting a lawyer and see the full
 license for all details.
